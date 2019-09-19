@@ -1,0 +1,16 @@
+inOrder Traveral
+m	43
+mdwgfkhp	100
+d	2
+dw	5
+w	3
+dwg	10
+g	5
+dwgfk	22
+f	5
+fk	12
+k	7
+dwgfkhp	57
+h	15
+hp	35
+p	20

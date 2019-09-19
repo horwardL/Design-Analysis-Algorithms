@@ -1,0 +1,23 @@
+listHead -->("dummy", 0, "d")-->("d", 2, "w")-->("w", 3, "g")-->("g", 5, "f")-->("f", 5, "k")-->("k", 7, "h")-->("h", 15, "p")-->("p", 20, "m")-->("m", 43, "NULL")-->NULL
+
+listHead -->("dummy", 0, "dw")-->("dw", 5, "g")-->("g", 5, "f")-->("f", 5, "k")-->("k", 7, "h")-->("h", 15, "p")-->("p", 20, "m")-->("m", 43, "NULL")-->NULL
+Node"dw",	Node's prob:5,	NextNode:"g",	left:"d",	right:"w"
+
+listHead -->("dummy", 0, "f")-->("f", 5, "k")-->("k", 7, "dwg")-->("dwg", 10, "h")-->("h", 15, "p")-->("p", 20, "m")-->("m", 43, "NULL")-->NULL
+Node"dwg",	Node's prob:10,	NextNode:"h",	left:"dw",	right:"g"
+
+listHead -->("dummy", 0, "dwg")-->("dwg", 10, "fk")-->("fk", 12, "h")-->("h", 15, "p")-->("p", 20, "m")-->("m", 43, "NULL")-->NULL
+Node"fk",	Node's prob:12,	NextNode:"h",	left:"f",	right:"k"
+
+listHead -->("dummy", 0, "h")-->("h", 15, "p")-->("p", 20, "dwgfk")-->("dwgfk", 22, "m")-->("m", 43, "NULL")-->NULL
+Node"dwgfk",	Node's prob:22,	NextNode:"m",	left:"dwg",	right:"fk"
+
+listHead -->("dummy", 0, "dwgfk")-->("dwgfk", 22, "hp")-->("hp", 35, "m")-->("m", 43, "NULL")-->NULL
+Node"hp",	Node's prob:35,	NextNode:"m",	left:"h",	right:"p"
+
+listHead -->("dummy", 0, "m")-->("m", 43, "dwgfkhp")-->("dwgfkhp", 57, "NULL")-->NULL
+Node"dwgfkhp",	Node's prob:57,	NextNode:NULL,	left:"dwgfk",	right:"hp"
+
+listHead -->("dummy", 0, "mdwgfkhp")-->("mdwgfkhp", 100, "NULL")-->NULL
+Node"mdwgfkhp",	Node's prob:100,	NextNode:NULL,	left:"m",	right:"dwgfkhp"
+

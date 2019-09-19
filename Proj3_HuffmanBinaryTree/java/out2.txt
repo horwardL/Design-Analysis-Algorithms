@@ -1,0 +1,16 @@
+preOrder Traveral
+mdwgfkhp	100
+m	43
+dwgfkhp	57
+dwgfk	22
+dwg	10
+dw	5
+d	2
+w	3
+g	5
+fk	12
+f	5
+k	7
+hp	35
+h	15
+p	20
